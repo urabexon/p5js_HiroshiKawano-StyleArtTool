@@ -28,3 +28,8 @@ function setup() {
     marginH = 150;
     marginV = 150;
 }
+
+function keyPressed() {
+    if (keyCode === 83)
+        saveForPrint("sketch.jpg", "A3", 300);
+}
