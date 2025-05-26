@@ -14,9 +14,12 @@ var wMin, wMax;
 var seed;
 
 var colors = [
-    
+    [60, 105, 226], // blue
+    [234, 184, 53], // yellow
+    [205, 48, 40],  // red
+    [20, 20, 20],   // black
+    [232, 227, 220] // white
 ];
-
 
 function setup() {
 
