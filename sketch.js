@@ -22,5 +22,9 @@ var colors = [
 ];
 
 function setup() {
+    createCanvas(720, 1080);
+    noLoop();
 
+    marginH = 150;
+    marginV = 150;
 }
