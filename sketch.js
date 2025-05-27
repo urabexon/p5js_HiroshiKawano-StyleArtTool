@@ -29,6 +29,11 @@ function setup() {
     marginV = 150;
 }
 
+function draw() {
+    background(colors[4]);
+    rectMode(CORNER);
+}
+
 function shadow(r, g, b, a) {
     drawingContext.shadowOffsetX = 10;
     drawingContext.shadowOffsetY = 20;
