@@ -38,9 +38,21 @@ function setup() {
     colorMax = 5;
     cW = width - marginH * 2.4;
     cH = height - marginV * 2;
-
     tLen = floor((cW / gsize)) * floor((cH / gsize));
+    rowLen = floor(cW / gsize);
 
+    var colLen = floor(cH / gsize);
+
+    realW = rowLen * gsize;
+    realH = colLen * gsize;
+    marginH = (width - realW) * 0.5;
+    marginV = (height - realH) * 0.5;
+    cLen = 0;
+    rowLenCurrent = 0;
+    colNum = 0;
+    rWPre = 0;
+    rW = 0;
+    seed = random(99999);
 }
 
 function draw() {
