@@ -32,6 +32,8 @@ function setup() {
 function shadow(r, g, b, a) {
     drawingContext.shadowOffsetX = 10;
     drawingContext.shadowOffsetY = 20;
+    drawingContext.shadowBlur = 50;
+    drawingContext.shadowColor = "rgba(" + r + "," + g + "," + b + "," + a + ")";
 }
 
 function keyPressed() {
