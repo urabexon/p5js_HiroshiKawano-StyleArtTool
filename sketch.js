@@ -29,6 +29,11 @@ function setup() {
     marginV = 150;
 }
 
+function shadow(r, g, b, a) {
+    drawingContext.shadowOffsetX = 10;
+    drawingContext.shadowOffsetY = 20;
+}
+
 function keyPressed() {
     if (keyCode === 83)
         saveForPrint("sketch.jpg", "A3", 300);
