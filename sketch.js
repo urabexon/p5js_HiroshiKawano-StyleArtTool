@@ -23,10 +23,24 @@ var colors = [
 
 function setup() {
     createCanvas(720, 1080);
-    noLoop();
+    // noLoop();
 
     marginH = 150;
     marginV = 150;
+
+    // gap between each rectangle
+    gap = 0;
+    gsize = 120 + gap;
+
+    wMin = 1;
+    wMax = 30;
+    colorMin = 0;
+    colorMax = 5;
+    cW = width - marginH * 2.4;
+    cH = height - marginV * 2;
+
+    tLen = floor((cW / gsize)) * floor((cH / gsize));
+
 }
 
 function draw() {
